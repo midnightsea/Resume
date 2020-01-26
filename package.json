@@ -37,7 +37,7 @@
     "@mdx-js/mdx": "^1.5.3",
     "@mdx-js/react": "^1.5.3",
     "gatsby-plugin-mdx": "^1.0.64",
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^2.2.0",
     "prettier": "^1.17.0",
     "rimraf": "^2.6.3"
   },
