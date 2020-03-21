@@ -8,7 +8,7 @@ export default function Education() {
       <img src={pic2} alt="" />
     </div>
     <div className="content">
-      <h3>Ultrices nullam aliquam</h3>
+      <h3>Education</h3>
       <p>
         Morbi mattis ornare ornare. Duis quam turpis, gravida at leo
         elementum elit fusce accumsan dui libero, quis vehicula lectus
