@@ -25,7 +25,7 @@ jobs:
       name: build and deploy gatsby
       with:
         access-token: ${{ secrets.ACCESS_TOKEN }}
-        deploy-branch: master
+        deploy-branch: gh-pages
         gatsby-args: --prefix-paths
 
 #     # Runs a set of commands using the runners shell
