@@ -46,9 +46,12 @@ const IndexPage = () => (
 
     <section id="two" className="wrapper">
       <div className="inner alt">
-        <Experience/>
-        <Education/>
         <Skills/>
+        <Education/>
+        <Experience/>
+
+
+
       </div>
     </section>
 

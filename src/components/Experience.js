@@ -1,20 +1,34 @@
 import React from 'react';
 import config from '../../config';
 import pic3 from '../assets/images/pic03.jpg';
+
 export default function Experience() {
   return (
     <section className="spotlight">
-    <div className="image">
+    {/* <div className="image">
       <img src={pic3} alt="" />
-    </div>
+    </div> */}
     <div className="content">
-      <h3>Ultrices nullam aliquam</h3>
+      <h3>Experience</h3>
       <p>
-        Morbi mattis ornare ornare. Duis quam turpis, gravida at leo
-        elementum elit fusce accumsan dui libero, quis vehicula lectus
-        ultricies eu. In convallis amet leo non sapien iaculis efficitur
-        consequat lorem ipsum.
-      </p>
+        <b>State Farm</b> <br />
+        Software Developer  <br />
+        <i>04/2019 - Present</i> <br />
+        mattis ornare ornare. Duis quam turpis, gravida at leo <br></br>
+        el
+    </p>
+    <p>
+        <b>Aetna</b> <br />
+        Voice Engineer  <br />
+        <i>06/2017 - 04/2019</i> <br />
+
+    </p>
+    <p>
+        <b>Air National Guard</b> <br />
+        Aircraft Maintenance (Crew Chief)  <br />
+        <i>11/2012 - 11/2018</i> <br />
+
+    </p>
     </div>
   </section>
   );
