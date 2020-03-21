@@ -7,8 +7,6 @@ name: CI
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -21,10 +19,13 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
+    - uses: enriikke/gatsby-gh-pages-action@v2
     # Runs a single command using the runners shell
     - name: build and deploy gatsby
-      run: npm deploy
+      with:
+        access-token: ${{ secrets.ACCESS_TOKEN }}
+        deploy-branch: master
+        gatsby-args: --prefix-paths
 
 #     # Runs a set of commands using the runners shell
 #     - name: Run a multi-line script
