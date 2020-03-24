@@ -1,11 +1,26 @@
 import React from 'react';
 import config from '../../config';
-import pic2 from '../assets/images/pic02.jpg';
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+
 export default function Education() {
+
+    const data = useStaticQuery(graphql`
+      query {
+        placeholderImage: file(relativePath: { eq: "pic02.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 300) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `)
+ 
   return (
     <section className="spotlight">
     <div className="image">
-      <img src={pic2} alt="" />
+       {<Img fluid={data.placeholderImage.childImageSharp.fluid} /> }
     </div>
     <div className="content">
       <h3>Education</h3>

@@ -10,9 +10,6 @@ import Experience from '../components/Experience';
 
 import Footer from '../components/Footer';
 import screen from '../assets/images/screen.png';
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
 import { Link } from 'gatsby';
 
 const IndexPage = () => (
