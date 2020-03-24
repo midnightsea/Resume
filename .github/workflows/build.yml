@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Build and deploy Gatsby pages
 
 # Controls when the action will run. Triggers the workflow on push or pull request 
 # events but only for the master branch
@@ -20,17 +20,13 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-      # name: Runs build and install
-      # run: |
-      #   # npm install 
-      #   # gatsby build --prefix-paths && gh-pages -d public
-    - uses: enriikke/gatsby-gh-pages-action@v2
-    # Runs a single command using the runners shell
-      name: build and deploy gatsby
-      with:
-        access-token: ${{ secrets.ACCESS_TOKEN }}
-        deploy-branch: gh-pages
-        gatsby-args: --prefix-paths
 
-#     # Runs a set of commands using the runners shell
+    - name: set git config
+      run: git config user.email "bot@runner.com" && git config user.name "CICD Pipeline"
 
+    - name: install dependencies
+      run: npm install
+    
+    - name: build and deploy
+      run: npx gatsby build --prefix-paths && npx gh-pages -d public -r https://${{ secrets.ACCESS_TOKEN }}@github.com/midnightsea/gatsby-starter.git
+        
