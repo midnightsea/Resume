@@ -28,5 +28,5 @@ jobs:
       run: npm install
     
     - name: build and deploy
-      run: npx gatsby build --prefix-paths && npx gh-pages -d public -r https://${{ secrets.ACCESS_TOKEN }}@github.com/midnightsea/gatsby-starter.git
+      run: npx gatsby build --prefix-paths && npx gh-pages -d public -r https://${{ secrets.ACCESS_TOKEN }}@github.com/midnightsea/Resume.git
         
