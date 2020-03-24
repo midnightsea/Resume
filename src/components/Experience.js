@@ -1,13 +1,10 @@
 import React from 'react';
 import config from '../../config';
-import pic3 from '../assets/images/pic03.jpg';
 
 export default function Experience() {
+
   return (
     <section className="spotlight">
-    {/* <div className="image">
-      <img src={pic3} alt="" />
-    </div> */}
     <div className="content">
       <h3>Experience</h3>
       <p>
