@@ -59,10 +59,10 @@ skill_list:
         name: AWS Certified Developer Associate
         icon: icon fa-amazon
     - skill:
-        name: Python
+        name: Python and Javascript
         icon: icon fa-code
     - skill:
-        name: Javascript
+        name: Git and CI/CD
         icon: icon fa-gitlab
     - skill:
         name: Terraform
