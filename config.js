@@ -1,7 +1,7 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Fractal', // <title>
-  manifestName: 'Fractal',
-  manifestShortName: 'Landing', // max 12 characters
+  siteTitle: 'Kevin Van', // <title>
+  manifestName: 'Resume',
+  manifestShortName: 'Resume', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
@@ -16,14 +16,12 @@ module.exports = {
     {
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
+      url: 'https://github.com/midnightsea',
     },
     {
       icon: 'fa-envelope-o',
       name: 'Email',
-      url: 'mailto:anubhav.srivastava00@gmail.com',
+      url: 'mailto:kevin.charles.van@gmail.com',
     },
   ],
-  phone: '000-00000',
-  address: '305 Del Sol, Sunnyvale, CA',
 };

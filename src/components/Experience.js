@@ -1,32 +1,27 @@
 import React from 'react';
 import config from '../../config';
+import resume_yaml from "../assets/data/resume.yml"
+import image from "../assets/images/pic01.jpg"
 
 export default function Experience() {
 
   return (
     <section className="spotlight">
-    <div className="content">
-      <h3>Experience</h3>
-      <p>
-        <b>State Farm</b> <br />
-        Software Developer  <br />
-        <i>04/2019 - Present</i> <br />
-        mattis ornare ornare. Duis quam turpis, gravida at leo <br></br>
-        el
-    </p>
-    <p>
-        <b>Aetna</b> <br />
-        Voice Engineer  <br />
-        <i>06/2017 - 04/2019</i> <br />
-
-    </p>
-    <p>
-        <b>Air National Guard</b> <br />
-        Aircraft Maintenance (Crew Chief)  <br />
-        <i>11/2012 - 11/2018</i> <br />
-
-    </p>
-    </div>
+      <div>
+        <h2>Experience</h2>
+        {resume_yaml["experience"].map((data, index) => {
+          return <div key={`content_item_${index}`}>
+          <b>{data["employer"].company}</b> <br />
+          {data["employer"].title}  <br />
+          {data["employer"].date} <br />
+          <ul>
+            {data["employer"].description.map((data, index) => {
+              return <li key={`description_item_${index}`}>{data}</li>
+            })}
+          </ul>
+          </div>
+        })}
+      </div>
   </section>
   );
 }

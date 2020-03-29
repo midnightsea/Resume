@@ -9,7 +9,6 @@ import Education from '../components/Education';
 import Experience from '../components/Experience';
 
 import Footer from '../components/Footer';
-import screen from '../assets/images/screen.png';
 import { Link } from 'gatsby';
 
 const IndexPage = () => (
@@ -34,11 +33,6 @@ const IndexPage = () => (
         })}
         </ul>
       </div>
-      <div className="image phone">
-        <div className="inner">
-          <img src={screen} alt="" />
-        </div>
-      </div>
     </header>
 
     <section id="two" className="wrapper">
@@ -46,24 +40,7 @@ const IndexPage = () => (
         <Skills/>
         <Education/>
         <Experience/>
-
-
-
       </div>
-    </section>
-
-    <section id="three" className="wrapper style2 special">
-      <header className="major">
-        <h2>Elements Page</h2>
-        <p>This starter is included with Elements demo for the starter</p>
-      </header>
-      <ul className="actions special">
-        <li>
-          <Link to="/Elements" className="button primary icon fa-plus">
-            Check Elements
-          </Link>
-        </li>
-      </ul>
     </section>
 
     <Footer />
