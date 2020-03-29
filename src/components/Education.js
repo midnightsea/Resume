@@ -2,9 +2,12 @@ import React from 'react';
 import config from '../../config';
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import resume_yaml from "../assets/data/resume.yml"
+
 
 export default function Education() {
 
+    // Trying out using graphql to get image
     const data = useStaticQuery(graphql`
       query {
         placeholderImage: file(relativePath: { eq: "pic02.jpg" }) {
@@ -24,12 +27,15 @@ export default function Education() {
     </div>
     <div className="content">
       <h3>Education</h3>
-      <p>
-        Morbi mattis ornare ornare. Duis quam turpis, gravida at leo
-        elementum elit fusce accumsan dui libero, quis vehicula lectus
-        ultricies eu. In convallis amet leo non sapien iaculis efficitur
-        consequat lorem ipsum.
-      </p>
+      
+      {resume_yaml["education"].map((data, index) => {
+        return <div key={`content_item_${index}`}>
+        <b>{data["school"].name}</b> <br />
+        {data["school"].date}  <br />
+        {data["school"].degree} <br />
+        <i>{data["school"].awards}</i><br /> <br />
+        </div>
+      })}
     </div>
   </section>
   );
