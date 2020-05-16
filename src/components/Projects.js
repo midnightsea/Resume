@@ -4,11 +4,11 @@ import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import resume_yaml from "../assets/data/resume.yml";
 
-export default function Education() {
+export default function Projects() {
   // Trying out using graphql to get image
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "pic02.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "pic03.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -24,15 +24,15 @@ export default function Education() {
         {<Img fluid={data.placeholderImage.childImageSharp.fluid} />}
       </div>
       <div className="content">
-        <h3>Education</h3>
+        <h3>Projects</h3>
 
-        {resume_yaml["education"].map((data, index) => {
+        {resume_yaml["projects"].map((data, index) => {
           return (
             <div key={`content_item_${index}`}>
-              <b>{data["school"].name}</b> <br />
-              {data["school"].date} <br />
-              {data["school"].degree} <br />
-              <i>{data["school"].awards}</i>
+              <b>{data["work"].description}</b>
+              <br />
+              {data["work"].technologies} <br />
+              {data["work"].link} <br />
               <br /> <br />
             </div>
           );
