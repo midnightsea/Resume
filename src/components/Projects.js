@@ -29,9 +29,10 @@ export default function Projects() {
         {resume_yaml["projects"].map((data, index) => {
           return (
             <div key={`content_item_${index}`}>
-              <b>{data["work"].description}</b>
+              <b>{data["work"].title}</b>
               <br />
-              {data["work"].technologies} <br />
+              {data["work"].description} <br />
+              Tech used: {data["work"].technologies} <br />
               {data["work"].link} <br />
               <br /> <br />
             </div>
