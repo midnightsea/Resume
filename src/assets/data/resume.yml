@@ -37,7 +37,15 @@ training time for 41 personnel in 2018"
             - "Developed an internal web application using ASP.Net to display call data by pulling from our MySQL Database"
 projects:
     - work:
-        description: "Built this Resume Page using GatsbyJS and using Github actions to deploy"
+        title: "Resume Page"
+        description: "A page made to display my resume hosted on Github"
+        technologies: "GatsbyJS and using Github actions to deploy"
+        link: "https://midnightsea.github.io/Resume/"
+    - work:
+        title: "Newsfeed Page"
+        description: "A page made to pull back data from various news sources via API based on user input"
+        technologies: "GatsbyJS, Redux, Newsapi.org,  and Github actions to deploy"
+        link: "https://midnightsea.github.io/newsfeed/"
 
 education:
     - school:
