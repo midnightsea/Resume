@@ -4,9 +4,10 @@ experience:
         title: Software Developer
         date: 04/2019 - Present
         description:
-            - "Experienced in building out our CI/CD pipelines on Gitlab and leveraging them to develop applications efficiently."
+            - "Experienced in building out our CI/CD pipelines on Gitlab for automated testing and deployments"
             - "Helped build and secure our internal API using various AWS services along with using OAuth2 framework for authorization and authentication with Azure AD"
-            - "Deploy our infrastructure to AWS using Infrastructure as Code with Terraform"
+            - "Worked with a variety of AWS services and deployed them using Terraform and our pipeline"
+            - "Building a full stack web application on AWS using Javascript with React.js and Python for our backend API"
     - employer:
         company: Aetna
         title: Associate Voice Engineer
