@@ -41,7 +41,7 @@ projects:
       link: "https://midnightsea.github.io/Resume/"
   - work:
       title: "Newsfeed Page"
-      description: "A page made to pull back data from various news sources via API based on user input"
+      description: "A page to pull data from various news sources via an API based on input"
       technologies: "GatsbyJS, Redux, Newsapi.org,  and Github actions to deploy"
       link: "https://midnightsea.github.io/newsfeed/"
 
