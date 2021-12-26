@@ -1,51 +1,57 @@
 experience:
   - employer:
       company: State Farm
-      title: Software Developer
+      title: Lead Software Engineer
       date: 04/2019 - Present
       description:
-        - "Experience in building CI/CD pipelines on Gitlab for automated testing and deployments"
-        - "Helped build and secure our internal API using various AWS services along with using OAuth2 framework for authorization and authentication with Azure AD"
-        - "Worked with a variety of AWS services and deployed them using Terraform and our pipeline"
-        - "Building a full stack web application on AWS using Javascript with React.js and Python for our backend API"
+        - "Proficient with building CI/CD pipelines on Gitlab for automated testing and deployments. Familiar with Docker, containers and deploying Gitlab runners on Kubernetes."
+        - "Helped build and secure APIs on AWS using OAuth2 framework for authorization and authentication with Azure AD."
+        - "Experienced with handling secrets in pipelines and code using Hashicorp Vault or AWS Secrets Manager."
+        - "Co-created CLI tool written in Go to automate processes to rotate credentials across multiple platforms."
+        - "Knowledgeable with a variety of AWS services and using Infrastructure as Code (Terraform)."
+        - "Built a full stack web application on AWS using React.js and Python for the backend API."
+        - "Mentor junior engineers and provide technical assistance to other teams."
   - employer:
       company: Aetna
       title: Associate Voice Engineer
       date: 06/2017 - 04/2019
       description:
-        - "Created a system to link post call surveys to appropriate agents by building a CTI logger application written in Java"
-        - "Saving hundreds of work hours by automating call data migration processes, decryptions and parsing through metadata with scheduled Python and Powershell scripts."
-        - "Deployed Grafana and created a dashboard to monitor production servers"
-        - "Developed and deployed applications by leveraging knowledge in in PHP, JSON/XML/VXML, database and server management"
-        - "Migrating terabytes of data to and from vendors using AWS S3 CLI and AWS Snowball"
+        - "Saved hundreds of man-hours by automating tasks with Windows Task Scheduler, Linux Crontab, Python, Powershell and Bash scripts."
+        - "Deployed Grafana and created a dashboard to monitor production servers."
+        - "Developed and deployed applications by leveraging knowledge in in PHP, JSON/XML/VXML, Apache and MySQL."
   - employer:
       company: Arizona Air National Guard
       title: Crew Chief - Staff Sergeant
       date: 10/2012 - 10/2018
       description:
-        - "Inspecting, maintaining, and repairing the KC-135 to ensure the aircraft is safe for flight"
-        - "Received The Air Force Achievement Medal on a TDY for saving the Air Force eight thousand dollars and preventing lost training time for 41 personnel in 2018"
+        - "Inspecting, maintaining, and repairing the KC-135 to ensure the aircraft is safe for flight."
+        - "Received The Air Force Achievement Medal on a TDY for saving the Air Force eight thousand dollars and preventing lost training time for 41 personnel in 2018."
   - employer:
       company: Aetna
       title: Voice Engineer Intern
       date: Summer of 2015 and Summer of 2016
       description:
-        - "Set up Avaya Gateways and Linux virtual machines to scale our environment"
-        - "Configured and installed an Avaya Diagnostic Server to monitor thousands of VoIP phones"
-        - "Developed an internal web application using ASP.Net to display call data by pulling from our MySQL Database"
+        - "Set up Avaya Gateways and Linux virtual machines to scale our environment."
+        - "Configured and installed an Avaya Diagnostic Server to monitor thousands of VoIP phones."
+        - "Developed an internal web application using ASP.Net to display call data by pulling from our MySQL Database."
 projects:
   - work:
       title: "Resume Page"
-      description: "A page made to display my resume hosted on Github"
-      technologies: "GatsbyJS and using Github actions to deploy"
+      description: "A page made to display my resume hosted on Github."
+      technologies: "GatsbyJS and using Github actions to deploy."
       link: "https://midnightsea.github.io/Resume/"
   - work:
       title: "Newsfeed Page"
-      description: "A page to pull data from various news sources via an API based on input"
-      technologies: "GatsbyJS, Redux, Newsapi.org,  and Github actions to deploy"
+      description: "A page to pull data from various news sources via an API based on input."
+      technologies: "GatsbyJS, Redux, Newsapi.org,  and Github actions to deploy."
       link: "https://midnightsea.github.io/newsfeed/"
 
 education:
+  - school:
+      name: The American College
+      date: 08/2014 - Present
+      degree: Chartered Financial Consultant® (ChFC®)
+      awards:
   - school:
       name: Arizona State University
       date: 08/2014 - 05/2017
@@ -65,11 +71,11 @@ skill_list:
       name: AWS Certified Developer Associate
       icon: icon fa-amazon
   - skill:
-      name: Python and Javascript
+      name: Python, Javascript and Go
       icon: icon fa-code
   - skill:
       name: Git and CI/CD
       icon: icon fa-gitlab
   - skill:
-      name: Terraform
+      name: Terraform Associate
       icon: icon fa-sitemap
