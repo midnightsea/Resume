@@ -20,6 +20,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - uses: actions/checkout@v2
       - name: test
         run: npm install && npx gatsby build --prefix-paths
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
