@@ -4,17 +4,17 @@ name: Build and deploy Gatsby pages
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
-on:
-  pull_request:
-    types: [closed]
-    branches: [master]
+# on:
+#   pull_request:
+#     types: [closed]
+#     branches: [master]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: macos-10.15
+    runs-on: macos-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -27,5 +27,5 @@ jobs:
       - name: install dependencies
         run: npm install
 
-      - name: build and deploy
-        run: npx gatsby build --prefix-paths && npx gh-pages -d public -r https://${{ secrets.ACCESS_TOKEN }}@github.com/midnightsea/Resume.git
+      # - name: build and deploy
+      #   run: npx gatsby build --prefix-paths && npx gh-pages -d public -r https://${{ secrets.ACCESS_TOKEN }}@github.com/midnightsea/Resume.git
